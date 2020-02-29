@@ -1,7 +1,7 @@
 #include <stdint.h>
 
-#define CNK24 1
-#define CNK32 1
+#define CNK24 6
+#define CNK32 6
 #define CNK40 7000
 #define CNK48 11000
 #define CNK56 700
@@ -18,7 +18,7 @@
 /*chunk size is 2^8*/
 #define CNK_8 256
 
-#define SIZE16 10
+#define SIZE16 65536
 #define SIZE24 CNK24 * CNK_8
 #define SIZE32 CNK32 * CNK_8
 #define SIZE40 CNK40 * CNK_8
