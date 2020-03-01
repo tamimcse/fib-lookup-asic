@@ -1,7 +1,7 @@
 #include <stdint.h>
 
 #define CNK24 60
-#define CNK32 60
+#define CNK32 6000
 #define CNK40 7000
 #define CNK48 11000
 #define CNK56 700
@@ -35,15 +35,8 @@
 #define SIZE120 CNK120 * CNK_8
 #define SIZE128 CNK128 * CNK_8
 
-const int8_t N16[SIZE16] = {1};
-const int32_t C16[SIZE16] = {1};
-const int8_t N24[SIZE24] = {1};
-const int8_t C24[SIZE24] = {1};
-const int8_t N32[SIZE32] = {1};
-const int8_t C32[SIZE32] = {1};
-
 // SAIL based FIB lookup
-int8_t sail (int64_t ip1, int64_t ip2)
+int8_t sail (int8_t N16[SIZE16], int32_t C16[SIZE16], int8_t N24[SIZE24], int8_t C24[SIZE24], int8_t N32[SIZE32], int8_t C32[SIZE32], int64_t ip1, int64_t ip2)
 {
   int i,j,k;
   uint32_t idx = ip1 >> 48;
