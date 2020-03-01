@@ -1,7 +1,7 @@
 #include <stdint.h>
 
-#define CNK24 6
-#define CNK32 6
+#define CNK24 60
+#define CNK32 60
 #define CNK40 7000
 #define CNK48 11000
 #define CNK56 700
